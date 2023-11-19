@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #000;
+    color: #fff;
+}
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/header-image.png);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+.logo{
+    width: 155px;
+    cursor: pointer;
+}
+ .signin-button{
+    border: 0;
+    outline: 0;
+    background: hsl(0, 100%, 50%);
+    color: hsl(0, 0%, 100%);
+    padding: 7px 20px;
+    font-size: 14px;
+    border-radius: 4px;
+    margin-left: 12px;
+}
+.header-content{
+    position: absolute;
+    top: 220px;
+    right: 250px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.header-content h1{
+ font-size: 50px;
+ font-weight: bold;
+ max-width: 900px;
+
+}
+.header-content h3 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+.header-content p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+.email-signup{
+    margin-top: 20px;
+
+}
+.email-signup input{
+    border: 1px solid #808080;
+    border-radius: 4px;
+    margin-left: 5px;
+    background-color: rgba(0,0,0,0.1);
+    width: 350px;
+    height: 57px;
+    color: white;
+    overflow: hidden;
+    padding-left: 20px;
+}
+
+input::placeholder{
+    width: 100%;
+    flex: 0%;
+}
+
+
+.email-signup button{
+    border: 0;
+    border-radius: 4px;
+    width: 200px;
+    height: 56px;
+    margin-bottom: 20px;
+    background: red;
+    text-align: center;
+    color:#fff;
+    font-size: 22px;
+    font-weight: bold;
+    padding: 10px 25px;
+}
+
+/*---------------------------- features--------------------------- */
+.features{
+    padding: 50px 12%;
+    font-size: 22px;
+    border-top: 6px solid #333;
+}
+.row{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+.text-col{
+    flex-basis: 50%;
+    margin-top: 20px;
+}
+.img-col{
+    flex-basis: 50%;
+    margin-top: 20px; 
+}
+.img-col img{
+   display: block;
+   width: 90%;
+   margin: auto;
+}
+.text-col h2{
+  font-size: 45px;
+  font-weight: 800;
+  margin-bottom: 20px; 
+}
+.text-col p{
+    font-size: 25px;
+    line-height: 30px;
+}
+
+/*--------faq--------*/
+.faq{
+    padding: 12px 12%;
+    align-items: center;
+    border-top: 6px solid #333;
+}
+.faq h2{
+    text-align: center;
+    font-size: 43px;
+    font-weight: 800;
+    padding-top: 50px;
+}
+.lists{
+    text-align: center;
+    margin: 60px auto;
+    width: 100%;
+    max-width: 800px;
+}
+.lists li{
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+.lists li label{
+    display: flex;
+    background: #303030;
+    padding: 25px;
+    cursor: pointer;
+    margin-bottom:2px;
+}
+label::after{
+    content: '+';
+    font-size: 25px;
+    position: absolute;
+    right: 320px;
+    line-height: 25px;
+    transform: scale(1.8);
+    transition: max-height 0.5s, padding 0.5s;
+}
+input[type="radio"]{
+    display: none;
+}
+.lists .content{
+    background: #303030;
+    text-align: left;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s, padding 0.5s;
+}
+.lists input[type="radio"]:checked + label + .content{
+  max-height: 600px;
+  padding: 30px 20px;  
+}
+.lists input[type="radio"]:checked + label::after{
+    transform: rotate(135deg); 
+  }
+
+.signin-bottom{
+   text-align: center;
+}
+
+.signin-bottom p{
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/*--------------footer------------*/
+.footer{
+    padding: 50px 12% 1px;
+    border-top: 6px solid #333;
+    color: #808080;
+}
+
+.footer h2{
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 8px;
+}
+.footer .underline{
+    text-decoration: underline;
+}
+
+.footer .col{
+    flex-basis: 25%;
+    flex-grow: 1;  
+}
+
+.footer .col a{
+    display: block;
+    color:#808080;
+    align-items: flex-end;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 800px;
+}
+.footer .row{
+    align-items: flex-start;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.footer .lang-country-info{
+    padding: 12px 6px 10px;
+}
+
+.footer .lang-country-info .lang{
+    width: 150px;
+    height: 35px;
+    border-radius: 6px;
+    text-align: center;
+    margin-bottom: 18px;
+    background: rgba(0,0,0,0.1);
+    color: #fff;
+    font-size: 14px;
+    font-weight: 520;
+}
+
+
+  
+
+ 
+
+
+
+
+
+ 
+
